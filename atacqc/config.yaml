@@ -1,0 +1,108 @@
+## Sample List.
+sample:  
+  Bulk_B:
+    fwd: /mnt/public3/cat/data/ATAC/fq/SRR7650729_1.fastq.gz
+    rev: /mnt/public3/cat/data/ATAC/fq/SRR7650729_2.fastq.gz
+  Mem_B:
+    fwd: /mnt/public3/cat/data/ATAC/fq/SRR7650731_1.fastq.gz
+    rev: /mnt/public3/cat/data/ATAC/fq/SRR7650731_2.fastq.gz
+  Naive_B:
+    fwd: /mnt/public3/cat/data/ATAC/fq/SRR7650733_1.fastq.gz
+    rev: /mnt/public3/cat/data/ATAC/fq/SRR7650733_2.fastq.gz
+  Plasmablasts:
+    fwd: /mnt/public3/cat/data/ATAC/fq/SRR7650735_1.fastq.gz
+    rev: /mnt/public3/cat/data/ATAC/fq/SRR7650735_2.fastq.gz
+  CD8pos_T:
+    fwd: /mnt/public3/cat/data/ATAC/fq/SRR7650736_1.fastq.gz
+    rev: /mnt/public3/cat/data/ATAC/fq/SRR7650736_2.fastq.gz
+  Central_memory_CD8pos_T:
+    fwd: /mnt/public3/cat/data/ATAC/fq/SRR7650738_1.fastq.gz
+    rev: /mnt/public3/cat/data/ATAC/fq/SRR7650738_2.fastq.gz
+  Effector_memory_CD8pos_T:
+    fwd: /mnt/public3/cat/data/ATAC/fq/SRR7650740_1.fastq.gz
+    rev: /mnt/public3/cat/data/ATAC/fq/SRR7650740_2.fastq.gz
+  Naive_CD8_T:
+    fwd: /mnt/public3/cat/data/ATAC/fq/SRR7650742_1.fastq.gz
+    rev: /mnt/public3/cat/data/ATAC/fq/SRR7650742_2.fastq.gz
+  Gamma_delta_T:
+    fwd: /mnt/public3/cat/data/ATAC/fq/SRR7650744_1.fastq.gz
+    rev: /mnt/public3/cat/data/ATAC/fq/SRR7650744_2.fastq.gz
+  Effector_CD4pos_T:
+    fwd: /mnt/public3/cat/data/ATAC/fq/SRR7650745_1.fastq.gz
+    rev: /mnt/public3/cat/data/ATAC/fq/SRR7650745_2.fastq.gz
+  Follicular_T_Helper:
+    fwd: /mnt/public3/cat/data/ATAC/fq/SRR7650747_1.fastq.gz
+    rev: /mnt/public3/cat/data/ATAC/fq/SRR7650747_2.fastq.gz
+  Memory_Teffs:
+    fwd: /mnt/public3/cat/data/ATAC/fq/SRR7650749_1.fastq.gz
+    rev: /mnt/public3/cat/data/ATAC/fq/SRR7650749_2.fastq.gz
+  Memory_Tregs:
+    fwd: /mnt/public3/cat/data/ATAC/fq/SRR7650751_1.fastq.gz
+    rev: /mnt/public3/cat/data/ATAC/fq/SRR7650751_2.fastq.gz
+  Naive_Teffs:
+    fwd: /mnt/public3/cat/data/ATAC/fq/SRR7650753_1.fastq.gz
+    rev: /mnt/public3/cat/data/ATAC/fq/SRR7650753_2.fastq.gz
+  Regulatory_T:
+    fwd: /mnt/public3/cat/data/ATAC/fq/SRR7650755_1.fastq.gz
+    rev: /mnt/public3/cat/data/ATAC/fq/SRR7650755_2.fastq.gz
+  Th1_precursors:
+    fwd: /mnt/public3/cat/data/ATAC/fq/SRR7650757_1.fastq.gz
+    rev: /mnt/public3/cat/data/ATAC/fq/SRR7650757_2.fastq.gz
+  Immature_NK:
+    fwd: /mnt/public3/cat/data/ATAC/fq/SRR7650763_1.fastq.gz
+    rev: /mnt/public3/cat/data/ATAC/fq/SRR7650763_2.fastq.gz
+  Mature_NK:
+    fwd: /mnt/public3/cat/data/ATAC/fq/SRR7650764_1.fastq.gz
+    rev: /mnt/public3/cat/data/ATAC/fq/SRR7650764_2.fastq.gz
+  Monocytes:
+    fwd: /mnt/public3/cat/data/ATAC/fq/SRR7650767_1.fastq.gz
+    rev: /mnt/public3/cat/data/ATAC/fq/SRR7650767_2.fastq.gz
+  pDCs:
+    fwd: /mnt/public3/cat/data/ATAC/fq/SRR7650770_1.fastq.gz
+    rev: /mnt/public3/cat/data/ATAC/fq/SRR7650770_2.fastq.gz
+
+## Pipeline working derectory.    
+workdir: /mnt/public3/cat/data/ATAC/
+
+## BWA indexed genome fasta file.
+fasta: /public/workspace/zhutao/pipeline/genome/hg19/bwa_clean_index/hg19_clean.fa
+
+## The gff file.
+gff3: /public/workspace/zhutao/pipeline/genome/hg19/gencode.v19.annotation.gff3
+
+## Effective genome size for MACS2 peeak calling.
+effect_genome_size: 2864785220
+
+## Motif file with PWM format.
+motif: /mnt/public3/cat/data/ATAC/jaspar.moitf.txt
+
+## Sequence_adapters
+adapters: /public/workspace/zhutao/miniconda3/pkgs/trimmomatic-0.39-1/share/trimmomatic-0.39-1/adapters/NexteraPE-PE.fa
+
+## mapping quality tags
+mapping_quality: 30
+
+## Organelle name (For plants, a comma separates mitochondria and chloroplasts)
+organell_chr: chrX
+
+## Peak calling
+extsize: 150
+shift: 75
+
+## convert bam to bigwig
+smoothLength: 20
+binSize: 5
+threads: 5
+
+## The software path
+software:
+  atacqc: "/mnt/public3/cat/data/ATAC/atacqc"
+  trimmomatic: "~/miniconda3/bin/trimmomatic"
+  bwa: "~/miniconda3/bin/bwa"
+  bedtools: "/bioapps/rhel7/bedtools-2.30.0/bin/bedtools"
+  samtools: "~/miniconda3/bin/samtools"
+  macs2: "~/miniconda3/bin/macs2"
+  bamCoverage: "~/miniconda3/bin/bamCoverage"
+  fadix: "~/miniconda3/bin/faidx"
+  multiqc: "~/miniconda3/bin/multiqc"
+  TOBIAS: "~/miniconda3/envs/tobias/bin/TOBIAS"

@@ -1,0 +1,26 @@
+# plot_type: 'table'
+# section_name: 'ATAC-seq Quality Control General Stats.'
+# pconfig:
+#     namespace: 'Cust Data'
+# headers:
+#     raw_reads_num:
+#         title: 'Raw reads number'
+#         description: 'This is a longer hover text for my column'
+#     q30:
+#         title: 'Q30 reads number'
+#         description: 'Hover description text'
+#     mapping_rate:
+#         title: 'Mapping rate'
+#         description: 'Hover description text'
+#     organ_mapping:
+#         title: 'Organell mapping rate'
+#         description: 'This is a longer hover text for my column'
+#     dup_rate:
+#         title: 'Duplication rate'
+#         description: 'Hover description text'
+#     tss:
+#         title: 'TSS enrichment'
+#         description: 'Hover description text'
+#     frip:
+#         title: 'FRiP'
+#         description: 'Hover description text'

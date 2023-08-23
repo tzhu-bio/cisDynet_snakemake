@@ -1,0 +1,8 @@
+title: "Chromatin Accessibility Toolkit(CAT) Data Quality Control Report"
+subtitle: "Just For CAT package Analysis."
+intro_text: "Designed by Tao Zhu. 2023-08-01"
+
+report_header_info:
+  - Contact E-mail: "tzhubio@gmail.com"
+  - Application Type: "ATAC-seq/DNase-seq/MNase-seq"
+
