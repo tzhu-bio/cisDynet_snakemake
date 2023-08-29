@@ -77,4 +77,4 @@ gff3: /public/workspace/zhutao/pipeline/genome/tair10_rsem/tair10.gtf
 rsem_index: /public/workspace/zhutao/pipeline/genome/tair10_rsem/tair10
 
 software:
-  rna_quant: "/mnt/public3/cat/data/ATAC/atacqc"
+  rna_quant: "/mnt/public3/cat/data/ATAC/atacqc"   ## The path to necessary scripts folder.
