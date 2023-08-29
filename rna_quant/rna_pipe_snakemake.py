@@ -176,7 +176,7 @@ rule get_sample_name:
                  sample_name = 'all_sample_name.txt'
             run:
                #shell("ls quant/*.genes.results|sed 's|quant/||g' |sed 's/.genes.results//g'|paste -s -d "\t"|awk '{{print "Gene""\t"$0}}' > {output.sample_name}")
-                shell("sh /public/workspace/zhutao/pipeline/rna_pipe/sample_name.sh '*.genes.results' {output.sample_name}")
+                shell("sh {config[software][rna_quant]}/sample_name.sh '*.genes.results' {output.sample_name}")
                # shell("sh /public/workspace/zhutao/pipeline/rna_pipe/sample_name.sh ./*.genes.results {output.sample_name}")
 
 rule merge_data:
@@ -192,9 +192,9 @@ rule merge_data:
                 COUNTS = 'RSEM_Counts_Results.txt'
            message: "----Merge The TPM Data----"
            run:
-              shell("sh /public/workspace/zhutao/pipeline/rna_pipe/rsem.fpkm.sh './*.genes.results' {output.fpkm}") 
+              shell("sh {config[software][rna_quant]}/rsem.fpkm.sh './*.genes.results' {output.fpkm}") 
               shell("cat all_sample_name.txt {output.fpkm} > {output.FPKM}")
-              shell("sh /public/workspace/zhutao/pipeline/rna_pipe/rsem.tpm.sh './*.genes.results' {output.tpm}")
+              shell("sh {config[software][rna_quant]}/rsem.tpm.sh './*.genes.results' {output.tpm}")
               shell("cat all_sample_name.txt {output.tpm} > {output.TPM}")
-              shell("sh /public/workspace/zhutao/pipeline/rna_pipe/rsem.counts.sh './*.genes.results' {output.counts}")
+              shell("sh {config[software][rna_quant]}/rsem.counts.sh './*.genes.results' {output.counts}")
               shell("cat all_sample_name.txt {output.counts} > {output.COUNTS}")
