@@ -75,3 +75,15 @@ gff3: /public/workspace/zhutao/pipeline/genome/tair10_rsem/tair10.gtf
 
 ## RSEM index.
 rsem_index: /public/workspace/zhutao/pipeline/genome/tair10_rsem/tair10
+
+software:
+  rna_quant: "/mnt/public3/cat/data/ATAC/atacqc"
+  trimmomatic: "~/miniconda3/bin/trimmomatic"
+  bwa: "~/miniconda3/bin/bwa"
+  bedtools: "/bioapps/rhel7/bedtools-2.30.0/bin/bedtools"
+  samtools: "~/miniconda3/bin/samtools"
+  macs2: "~/miniconda3/bin/macs2"
+  bamCoverage: "~/miniconda3/bin/bamCoverage"
+  fadix: "~/miniconda3/bin/faidx"
+  multiqc: "~/miniconda3/bin/multiqc"
+  TOBIAS: "~/miniconda3/envs/tobias/bin/TOBIAS"
