@@ -1,0 +1,77 @@
+## Sample List.
+sample:  
+  Transverse_colon:
+     fwd: /mnt/public3/cat/data/ATAC/plants/rna/fq/CRR134590_f1.fq.gz
+     rev: /mnt/public3/cat/data/ATAC/plants/rna/fq/CRR134590_r2.fq.gz
+  Sigmoid_colon:
+    fwd: /mnt/public3/cat/data/ATAC/plants/rna/fq/CRR134591_f1.fq.gz
+    rev: /mnt/public3/cat/data/ATAC/plants/rna/fq/CRR134591_r2.fq.gz
+  Stomach:
+    fwd: /mnt/public3/cat/data/ATAC/plants/rna/fq/CRR134592_f1.fq.gz
+    rev: /mnt/public3/cat/data/ATAC/plants/rna/fq/CRR134592_r2.fq.gz
+  Lung:
+    fwd: /mnt/public3/cat/data/ATAC/plants/rna/fq/CRR134593_f1.fq.gz
+    rev: /mnt/public3/cat/data/ATAC/plants/rna/fq/CRR134593_r2.fq.gz
+  Gastrocnemius_medialis:
+    fwd: /mnt/public3/cat/data/ATAC/plants/rna/fq/CRR134594_f1.fq.gz
+    rev: /mnt/public3/cat/data/ATAC/plants/rna/fq/CRR134594_r2.fq.gz
+  Spleen:
+    fwd: /mnt/public3/cat/data/ATAC/plants/rna/fq/CRR134595_f1.fq.gz
+    rev: /mnt/public3/cat/data/ATAC/plants/rna/fq/CRR134595_r2.fq.gz
+  Adrenal_gland:
+    fwd: /mnt/public3/cat/data/ATAC/plants/rna/fq/CRR134596_f1.fq.gz
+    rev: /mnt/public3/cat/data/ATAC/plants/rna/fq/CRR134596_r2.fq.gz
+  Pancreas:
+    fwd: /mnt/public3/cat/data/ATAC/plants/rna/fq/CRR134597_f1.fq.gz
+    rev: /mnt/public3/cat/data/ATAC/plants/rna/fq/CRR134597_r2.fq.gz
+  Tibial_nerve:
+    fwd: /mnt/public3/cat/data/ATAC/plants/rna/fq/CRR134598_f1.fq.gz
+    rev: /mnt/public3/cat/data/ATAC/plants/rna/fq/CRR134598_r2.fq.gz
+  Testis:
+    fwd: /mnt/public3/cat/data/ATAC/plants/rna/fq/CRR134599_f1.fq.gz
+    rev: /mnt/public3/cat/data/ATAC/plants/rna/fq/CRR134599_r2.fq.gz
+  Lower_leg_skin:
+    fwd: /mnt/public3/cat/data/ATAC/plants/rna/fq/CRR134600_f1.fq.gz
+    rev: /mnt/public3/cat/data/ATAC/plants/rna/fq/CRR134600_r2.fq.gz
+  Vagina:
+    fwd: /mnt/public3/cat/data/ATAC/plants/rna/fq/CRR134601_f1.fq.gz
+    rev: /mnt/public3/cat/data/ATAC/plants/rna/fq/CRR134601_r2.fq.gz
+  Uterus:
+    fwd: /mnt/public3/cat/data/ATAC/plants/rna/fq/CRR134602_f1.fq.gz
+    rev: /mnt/public3/cat/data/ATAC/plants/rna/fq/CRR134602_r2.fq.gz
+  Omental_fat_pad:
+    fwd: /mnt/public3/cat/data/ATAC/plants/rna/fq/CRR134603_f1.fq.gz
+    rev: /mnt/public3/cat/data/ATAC/plants/rna/fq/CRR134603_r2.fq.gz
+  Ovary:
+    fwd: /mnt/public3/cat/data/ATAC/plants/rna/fq/CRR134604_f1.fq.gz
+    rev: /mnt/public3/cat/data/ATAC/plants/rna/fq/CRR134604_r2.fq.gz
+  Ascending_aorta:
+    fwd: /mnt/public3/cat/data/ATAC/plants/rna/fq/CRR134605_f1.fq.gz
+    rev: /mnt/public3/cat/data/ATAC/plants/rna/fq/CRR134605_r2.fq.gz
+ # Thoracic_aorta:
+ #   fwd: /mnt/public3/cat/data/ATAC/encode/RNA/fq/SRR4422345_1.fastq.gz
+ #   rev: /mnt/public3/cat/data/ATAC/encode/RNA/fq/SRR4422345_2.fastq.gz
+ # Liver:
+ #   fwd: /mnt/public3/cat/data/ATAC/encode/RNA/fq/SRR4421874_1.fastq.gz
+ #   rev: /mnt/public3/cat/data/ATAC/encode/RNA/fq/SRR4421874_2.fastq.gz
+ # D20_Rep1:
+ #   fwd: /mnt/public3/cat/data/ATAC/human/time/fq/SRR10020615_1.fastq.gz
+ #   rev: /mnt/public3/cat/data/ATAC/human/time/fq/SRR10020615_2.fastq.gz
+ # D20_Rep2:
+ #   fwd: /mnt/public3/cat/data/ATAC/human/time/fq/SRR10020616_1.fastq.gz
+ #   rev: /mnt/public3/cat/data/ATAC/human/time/fq/SRR10020616_2.fastq.gz
+ # D20_Rep3:
+ #   fwd: /mnt/public3/cat/data/ATAC/human/time/fq/SRR10020617_1.fastq.gz
+ #   rev: /mnt/public3/cat/data/ATAC/human/time/fq/SRR10020617_2.fastq.gz
+ # D20_Rep4:
+ #   fwd: /mnt/public3/cat/data/ATAC/human/time/fq/SRR10020618_1.fastq.gz
+ #   rev: /mnt/public3/cat/data/ATAC/encode/RNA/fq/SRR10020618_2.fastq.gz
+
+## Pipeline working derectory. 
+workdir: /mnt/public3/cat/data/ATAC/plants/rna
+
+## The gff3 file.
+gff3: /public/workspace/zhutao/pipeline/genome/tair10_rsem/tair10.gtf
+
+## RSEM index.
+rsem_index: /public/workspace/zhutao/pipeline/genome/tair10_rsem/tair10
