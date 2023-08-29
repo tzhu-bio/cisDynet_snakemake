@@ -7,3 +7,7 @@ After you have set up your environment and config.yaml file, you can run the pro
 ```python
 snakemake -s CAT_snakemake.py -j 20
 ```
+RNA-seq quantification pipeline
+```python
+snakemake -s rna_pipe_snakemake.py -j 20
+```
