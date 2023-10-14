@@ -1,4 +1,4 @@
-name: pipeline
+name: cat_pipeline
 channels:
   - bioconda
   - defaults
