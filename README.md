@@ -1,5 +1,10 @@
 # CAT_snakemake
-This is a chromatin accessibility data preprocessing process designed for CAT package.
+## Installation
+You can use the following command to configure the environment for the pipeline.
+```python
+conda env create -f cat_env.yaml
+```
+This is a chromatin accessibility data preprocessing process designed for CAT package. After running the pipeline, you will get an HTML report.
 ## 
 [Report Example](https://htmlpreview.github.io/?https://github.com/tzhu-bio/CAT_snakemake/blob/main/multiqc_report.html)
 
