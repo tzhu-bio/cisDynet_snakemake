@@ -2,7 +2,7 @@
 ## Installation
 You can use the following command to configure the environment for the pipeline.
 ```python
-conda env create -f cat_env.yaml
+conda env create -f cisDynet_env.yaml
 ```
 This is a chromatin accessibility data preprocessing process designed for CAT package. After running the pipeline, you will get an HTML report.
 ## 
@@ -11,7 +11,7 @@ This is a chromatin accessibility data preprocessing process designed for CAT pa
 ## ATAC-seq pipeline
 After you have set up your environment and config.yaml file, you can run the process using the following command
 ```python
-snakemake -s CAT_snakemake.py -j 20
+snakemake -s cisDynet_snakemake.py -j 20
 ```
 ## RNA-seq quantification pipeline
 
