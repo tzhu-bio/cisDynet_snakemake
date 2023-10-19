@@ -1,4 +1,4 @@
-name: cat_pipeline
+name: cisDynet_pipeline
 channels:
   - bioconda
   - defaults
