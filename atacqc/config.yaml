@@ -61,7 +61,7 @@ sample:
     fwd: /mnt/public3/cat/data/ATAC/fq/SRR7650770_1.fastq.gz
     rev: /mnt/public3/cat/data/ATAC/fq/SRR7650770_2.fastq.gz
 
-## Pipeline working derectory.    
+## Pipeline working directory.    
 workdir: /mnt/public3/cat/data/ATAC/
 
 ## BWA indexed genome fasta file.
@@ -73,10 +73,10 @@ gff3: /public/workspace/zhutao/pipeline/genome/hg19/gencode.v19.annotation.gff3
 ## Effective genome size for MACS2 peeak calling.
 effect_genome_size: 2864785220
 
-## Motif file with PWM format.
+## Motif file with PWM format. Example: https://jaspar.genereg.net/download/data/2022/CORE/JASPAR2022_CORE_non-redundant_pfms_meme.txt
 motif: /mnt/public3/cat/data/ATAC/jaspar.moitf.txt
 
-## Sequence_adapters
+## Sequence adapters
 adapters: /public/workspace/zhutao/miniconda3/pkgs/trimmomatic-0.39-1/share/trimmomatic-0.39-1/adapters/NexteraPE-PE.fa
 
 ## mapping quality tags
@@ -99,7 +99,7 @@ overlap_ratio: 0.3
 
 ## The software path
 software:
-  atacqc: "/mnt/public3/cat/data/ATAC/atacqc"
+  atacqc: "/mnt/public3/cat/data/ATAC/atacqc"        ##  download the atacqc directory from this repository and give the absolute path of it.
   trimmomatic: "~/miniconda3/bin/trimmomatic"
   bwa: "~/miniconda3/bin/bwa"
   bedtools: "/bioapps/rhel7/bedtools-2.30.0/bin/bedtools"
