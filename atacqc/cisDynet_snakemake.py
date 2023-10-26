@@ -71,7 +71,7 @@ rule all:
          expand("peaks/{smp}_peaks.narrowPeak", smp = config["sample"]),
          expand("peaks/{smp}_peaks_unique.narrowPeak.bed", smp = config["sample"]),
          expand("temp_file/{smp}_frip.csv", smp = config["sample"]),
-         expand("temp_file/{smp}_frip_final.csv", smp = config["sample"])
+         expand("temp_file/{smp}_frip_final.csv", smp = config["sample"]),
          expand("peaks/{smp}_peaks_unique_rm_blacklist.narrowPeak.bed", smp = config["sample"])
 
 
