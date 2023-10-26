@@ -72,6 +72,7 @@ rule all:
          expand("peaks/{smp}_peaks_unique.narrowPeak.bed", smp = config["sample"]),
          expand("temp_file/{smp}_frip.csv", smp = config["sample"]),
          expand("temp_file/{smp}_frip_final.csv", smp = config["sample"])
+         expand("peaks/{smp}_peaks_unique_rm_blacklist.narrowPeak.bed", smp = config["sample"])
 
 
 rule Trimming:
@@ -289,6 +290,19 @@ rule Dedup_peak:
       run:
           shell("cat {input.peak}|awk '!seen[$1,$2,$3]++' > {output.unique_peak}")
 
+rule Remove_blacklist:
+      input:
+            unique_peak = "peaks/{smp}_peaks_unique.narrowPeak.bed" 
+      output:
+            final_peak = "peaks/{smp}_peaks_unique_rm_blacklist.narrowPeak.bed"
+      params:
+            blacklist = config["blacklist"]
+            overlap_ratio = config["overlap_ratio"]
+      run:
+          if config["blacklist"] != "NULL":
+            shell("{config[software][bedtools]} intersect -v -f {params.overlap_ratio} -r -a {input.unique_peak} -b {params.blacklist} >{output.final_peak}")
+          else:
+            shell("echo 'No blacklist exists, skip this step.' > {output.final_peak}")
 
 rule FRiP:
      input:
