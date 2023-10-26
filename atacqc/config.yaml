@@ -94,6 +94,9 @@ smoothLength: 20
 binSize: 5
 threads: 5
 
+## Requiring the overlap region being at least xx% of peak as a blacklist.
+overlap_ratio: 0.3
+
 ## The software path
 software:
   atacqc: "/mnt/public3/cat/data/ATAC/atacqc"

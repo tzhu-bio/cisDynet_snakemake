@@ -19,6 +19,6 @@ output=open(args.outfile,'w')
 num = frip.readline().strip()
 name = str(re.sub('_frip.csv','',os.path.basename(args.frip)))
 q30 = q30_reads.readline().strip().split("\t")[1]
-ratio = round(int(num) / int(q30),4)
+ratio = round(int(num) / (2 * int(q30)),4)
 output.write(name+ '\t' + str(ratio) + '\n')
 output.close()
