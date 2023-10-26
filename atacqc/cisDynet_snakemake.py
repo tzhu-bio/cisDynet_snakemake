@@ -296,7 +296,7 @@ rule Remove_blacklist:
       output:
             final_peak = "peaks/{smp}_peaks_unique_rm_blacklist.narrowPeak.bed"
       params:
-            blacklist = config["blacklist"]
+            blacklist = config["blacklist"],
             overlap_ratio = config["overlap_ratio"]
       run:
           if config["blacklist"] != "NULL":
