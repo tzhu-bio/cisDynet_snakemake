@@ -1,4 +1,4 @@
-# CAT_snakemake
+# cisDynet_snakemake
 ## Installation
 You can use the following command to configure the environment for the pipeline.
 ```python
