@@ -299,7 +299,7 @@ rule Remove_blacklist:
             blacklist = config["blacklist"],
             overlap_ratio = config["overlap_ratio"]
       run:
-          if config["blacklist"] != "NULL":
+          if config["blacklist"] != "None":
             shell("{config[software][bedtools]} intersect -v -f {params.overlap_ratio} -r -a {input.unique_peak} -b {params.blacklist} >{output.final_peak}")
           else:
             shell("echo 'No blacklist exists, skip this step.' > {output.final_peak}")
