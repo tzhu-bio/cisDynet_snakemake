@@ -94,8 +94,9 @@ smoothLength: 20
 binSize: 5
 threads: 5
 
-## Requiring the overlap region being at least xx% of peak as a blacklist.
-overlap_ratio: 0.3
+## Remove blacklist from the peaks.
+blacklist: None
+overlap_ratio: 0.3   ## Requiring the overlap region being at least xx% of peak as a blacklist.
 
 ## The software path
 software:
