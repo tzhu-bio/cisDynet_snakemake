@@ -9,7 +9,7 @@ This is a chromatin accessibility data preprocessing process designed for cisDyn
 [Report Example](https://htmlpreview.github.io/?https://github.com/tzhu-bio/CAT_snakemake/blob/main/multiqc_report.html)
 
 ## ATAC-seq pipeline
-!! Before running this pipeline, you need to specify the absolute paths to some necessary software in the config.yaml file.
+Before running this pipeline, you need to specify the absolute paths to some necessary software in the config.yaml file.
 
 After you have set up your environment and config.yaml file, you can run the process using the following command
 ```python
