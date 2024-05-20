@@ -22,3 +22,15 @@ And RSEM index needs to be built first.
 ```python
 snakemake -s rna_pipe_snakemake.py -j 20
 ```
+## Blacklists
+
+The presence of some anomalous regions on the genome allows for extremely high signals. Most of these regions are due to the presence of repetitive sequences, genome assembly errors, and so on. In mammals, “problematic” regions have been inferred and manually checked and called blacklists, and are widely used in the analysis of genomic data. However, there are no systematic blacklists for plant genomes at present. To fill this gap, we used the [greenscreen](https://academic.oup.com/plcell/article/34/12/4795/6705244) in combination with data collected from our [ChIP-Hub database](https://www.nature.com/articles/s41467-022-30770-1) to obtain “problematic” lists for five plant species: Arabidopsis thaliana, rice, maize, soybean, and tomato. (In the *blacklists* directory)
+
+## Publication
+Zhu, Tao, Zhou, Xinkai, You, Yuxin, Wang, Lin, He, Zhaohui, and Chen, Dijun. 2023. “ cisDynet: An Integrated Platform for Modeling Gene-Regulatory Dynamics and Networks.” iMeta e152. https://doi.org/10.1002/imt2.152
+
+<a href="mailto:tzhubio@gmail.com">
+  <img src="https://github.com/blackcater/blackcater/raw/main/images/social-gmail.svg" height="40" />
+</a>
+
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=tzhu-bio&show_icons=true&theme=radical)
